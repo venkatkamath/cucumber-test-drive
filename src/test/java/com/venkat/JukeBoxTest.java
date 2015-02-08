@@ -1,10 +1,10 @@
 package com.venkat;
 
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 public class JukeBoxTest {
 
@@ -22,7 +22,7 @@ public class JukeBoxTest {
     public void testCalculateCredits() throws Exception {
         JukeBox box = new JukeBox();
         int credit  = box.calculateCredits(12);
-        assertEquals(48,credit);
+        Assert.assertEquals(48, credit);
 
     }
 }
